@@ -7,4 +7,5 @@ src/tf_autoaugment/autoaugment.py
 src/tf_autoaugment.egg-info/PKG-INFO
 src/tf_autoaugment.egg-info/SOURCES.txt
 src/tf_autoaugment.egg-info/dependency_links.txt
+src/tf_autoaugment.egg-info/requires.txt
 src/tf_autoaugment.egg-info/top_level.txt
