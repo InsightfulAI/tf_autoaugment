@@ -4,4 +4,4 @@ This is a Tensorflow implementation of AutoAugment and RandAugment, implemented 
 
 ## Installation
 
-TODO
+pip install git+https://github.com/InsightfulAI/tf_autoaugment.git
