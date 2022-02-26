@@ -27,7 +27,13 @@ import tensorflow.compat.v1 as tf
 #from tensorflow.contrib import image as contrib_image
 from tensorflow_addons import image as contrib_image
 #from tensorflow.contrib import training as contrib_training
-import tensorboard.plugins.hparams.api as contrib_training
+
+class HParams():
+  '''
+  Hack to get the code to work with tf2
+  '''
+  def __init__(self, **kwargs):
+    self.__dict__.update(kwargs)
 
 
 # This signifies the max integer that the controller RNN could predict for the
@@ -665,7 +671,7 @@ def distort_image_with_autoaugment(image, augmentation_name):
 
   policy = available_policies[augmentation_name]()
   # Hparams that will be used for AutoAugment.
-  augmentation_hparams = contrib_training.HParams(
+  augmentation_hparams = HParams(
       cutout_const=100, translate_const=250)
 
   return build_and_apply_nas_policy(policy, image, augmentation_hparams)
@@ -690,7 +696,7 @@ def distort_image_with_randaugment(image, num_layers, magnitude):
   """
   replace_value = [128] * 3
   tf.logging.info('Using RandAug.')
-  augmentation_hparams = contrib_training.HParams(
+  augmentation_hparams = HParams(
       cutout_const=40, translate_const=100)
   available_ops = [
       'AutoContrast', 'Equalize', 'Invert', 'Rotate', 'Posterize',
