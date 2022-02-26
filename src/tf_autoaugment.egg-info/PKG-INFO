@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tf-autoaugment
+Version: 0.0.1
+Summary: Tensorflow implementation of AutoAugment and RandAugment
+Home-page: https://github.com/pypa/sampleproject
+Author: Wenzheng Du
+Author-email: insightfulai@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Licence 2.0
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tensorflow Implementation of AutoAugment and RandAugment
+
+This is a Tensorflow implementation of AutoAugment and RandAugment, implemented with Tensorflow operations. The code in this package is taken from the official Tensorflow TPU implementation of EfficientNet [here](https://github.com/tensorflow/tpu/blob/master/models/official/efficientnet/autoaugment.py).
+
+## Installation
+
+TODO
+
